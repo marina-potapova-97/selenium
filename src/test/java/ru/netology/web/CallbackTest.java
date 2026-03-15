@@ -106,7 +106,11 @@ class CallbackTest {
         driver.findElement(By.className("button")).click();
         WebElement updatedAgreementLabel = driver.findElement(By.cssSelector("[data-test-id='agreement']"));
         assertTrue(updatedAgreementLabel.getAttribute("class").contains("input_invalid"));
+        assertTrue(updatedAgreementLabel.isDisplayed());
     }
+
+
+
 
 }
 
